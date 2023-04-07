@@ -7,7 +7,11 @@ def about(request):
     return render(request,'about.html',{ 'title' : title})
 
 def verificarUsuario(request):
-    usuarios = Usuario.objects.all()
+    usuarios = request.POST['']
+    clave = request.POST['']
+    cuenta = Usuario.objects.create(
+        
+    )
     return render(request,'login.html',{'usuarios':usuarios}) #usuarios [{},{},{}]
 
 def layout(request):
