@@ -6,15 +6,26 @@ from .models import *
 def loging(request):
     return render(request,'log.html')
 
+def register(request):
+    return render(request,'Register.html')
+
 def about(request):
-    title = ':)'
-    return render(request,'about.html',{ 'title' : title})
+    return render(request,'about.html')
 
-def verificarUsuario(request):
-    usuarios = request.POST['']
-    clave = request.POST['']
-    #cuenta = Usuario.objects.create()
-    return render(request,'login.html',{'usuarios':usuarios}) #usuarios [{},{},{}]
+def registrar(request):
+    Usuario.objects.create(
+        cod_usu = Usuario.objects.count()+1,
+        nombre_usu = request.POST['nombre'],
+        apellido_usu = request.POST['apellido'],
+        correo_usu = request.POST['email'],
+        clave_usu = request.POST['password']
+    )
+    return render(request,'log.html')
 
-def layout(request):
-    return render(request,'layout.html')
+def iniciarSesion(request):
+    for id in Usuario.objects.all():
+        if id.correo_usu == request.POST['email'] and id.clave_usu == request.POST['password']:
+            print("encontrado")
+            return render(request,'proyectos.html',{'proyectos':Proyecto.objects.all()})
+    return render(request,'log.html')
+

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+	{% load static %}
 	<title>Formulario de Registro</title>
-	<link rel="stylesheet" type="text/css" href="log_style.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/log_style.css' %}">
 </head>
 <body>
 	<div class="container">
 	<h2>Registro de Usuarios</h2>
-	<form action="#" method="post">
+	<form action="registrar" method="post">
+		{% csrf_token %}
 		<label for="nombre">Nombre:</label>
 		<input type="text" id="nombre" name="nombre" required><br><br>
 
@@ -21,7 +23,7 @@
 		<input type="password" id="password" name="password" required><br><br>
 
 		<button type="submit" class="btn">Registrar</button>
-        <button type="submit" id="b_crear">Cancelar</button>
+        <a href="login" id="cancelar_re" class="btn btn-info" >Cancelar</a>
 	</form>
 	</div>
 	<footer>

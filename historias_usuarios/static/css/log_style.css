@@ -1,6 +1,6 @@
 body {
 	font-family: Arial, sans-serif;
-	background-image: url(backround.png);
+	/*background-image: url(/historias_usuarios/static/img/backround.png);*/
     background-size: cover;
     opacity: 0.7;
 }
@@ -53,7 +53,7 @@ input[type="email"], input[type="password"],input[type="text"] {
 	cursor: pointer;
   
 }
-#b_crear{
+#crear{
         
         text-align: center;
     background-color: #ff313fc9;
@@ -62,6 +62,16 @@ input[type="email"], input[type="password"],input[type="text"] {
         border-radius: 4px;
         padding: 10px 40px;
         cursor: pointer;      
+}
+
+#cancelar_re{
+	text-align: center;
+    background-color: #ff313fc9;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 40px;
+        cursor: pointer;   
 }
 
 .btn:hover {
