@@ -1,6 +1,9 @@
 from django.db import models
 
 # Create your models here.
+from django.db import models
+
+# Create your models here.
 class Usuario(models.Model):
     cod_usu = models.IntegerField(primary_key=True,null=False,auto_created=True)
     nombre_usu = models.CharField(null=False,max_length=20)
@@ -16,6 +19,7 @@ class Historia_Usuario(models.Model):
     cod_his_usu = models.IntegerField(primary_key=True,null=False,auto_created=True)
     numero_his_usu = models.IntegerField(default=0,null=False)
     titulo_his_usu = models.CharField(null=False,max_length=20)
+    proyecto_his_usu = models.ForeignKey(Usuario, on_delete = models.CASCADE,null=False)
 
 class Version(models.Model):
     cod_ver = models.IntegerField(primary_key=True,null=False,auto_created=True)

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>User Story</title>
+</head>
+
+<body>
+    <nav class="header">
+        <img src="bars-solid.svg" alt="menu_barras" class="icono">
+        <div class="header-titulo">
+            <span class="titulo">
+                US DESINGER
+            </span>
+        </div>
+    </nav>
+    <main class="cuerpo">
+        <div class="col-izquierda">
+            <div>
+                <span class="titulo-col-izquierda">
+                    USER STORIES
+                </span>
+            </div>
+            <div class="contenedor-izquierda">
+                <div class="proyectos">
+
+                    <div class="proyecto">
+                        <h4> Micro Mercado </h4>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A exercitationem vel labore
+                        dignissimos
+                        sunt eligendi sapiente nulla. Ea itaque vero quasi, modi dolorem nam ab similique soluta est
+                        consequatur laudantium.
+                        <div>
+                            <button class="boton-acceder" onclick="propiedades()"> Propiedades </button>
+                            <img src="ellipsis-solid.svg" class="icono icono-opciones">
+                        </div>
+                    </div>
+
+
+                    <div class="proyecto">
+                        <h4> Banco </h4>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus amet quas
+                            voluptatum.
+                            Nulla
+                            cupiditate consectetur iure sint dicta sed et quis adipisci quam pariatur? Obcaecati
+                            consequatur
+                            eos molestiae asperiores officia.
+                        </div>
+                        <button class="boton-acceder" onclick="propiedades()"> Propiedades </button>
+                        <img src="ellipsis-solid.svg" class="icono icono-opciones">
+                    </div>
+
+                    <div class="proyecto">
+                        <h4> Red Social </h4>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorum inventore
+                            culpa
+                            voluptatum, nemo consequatur alias libero velit repudiandae minima dolore veniam nobis
+                            magni
+                            fugit animi sed ut et hic?
+                        </div>
+
+
+                        <div>
+                            <button class="boton-acceder" onclick="propiedades()">Propiedades </button>
+                            <img src="ellipsis-solid.svg" class="icono icono-opciones">
+                        </div>
+                    </div>
+
+                    <div class="proyecto">
+                        <h4> crear nuevo proyeycto</h4>
+                        <div class="contenedor-anadir-icono">
+                            <img src="plus-solid.svg" alt="anadir-proyecto" class="icono icono-anadir">
+                            <div>
+                                <button class="boton-crear" onclick="crearHistoria()">Create new user story</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-derecha">
+            <div class="contenedor-imagen-derecha">
+                <img src="escribiendo.jpg" alt="imagen-escribiendo" class="img-escribiendo">
+            </div>
+        </div>
+    </main>
+    <div id="crearhistoria" class="modal modal-crearhistoria invisible">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis cumque harum aliquid autem aliquam voluptates
+        eaque amet, laborum sunt nisi, ullam minima corrupti iusto hic tempore numquam, optio quod doloremque.
+        <button class="boton-crear" onclick="cerrarCrearhistoria()">cerrar</button>
+    </div>
+
+    <div id="crearpropiedades" class="modal modal-crearpropiedades invisible">
+        <button class="boton-crear" onclick="abrirEditar()"> Editar </button>
+        <button class="boton-crear" onclick="abrirModal('historial')"> Historial </button>
+        <button class="boton-crear" onclick="propiedadesEliminar()"> Eliminar </button>
+        <button class="boton-crear modal-botoncerrar"onclick="cerrarEliminar()">Cerrar </button>
+    </div>
+
+    <div id="eliminar" class="modal modal-eliminarus invisible">
+        <p>
+            ESTA ACCION ELIMINARA LA US Y NO SE PODRA DESHACER
+        </p>
+        <button class="boton-crear"> Continuar </button>
+        <button class="boton-crear" onclick="cerrarModal('eliminar')"> Cancelar </button>
+    </div>
+
+    <div id="editarhistoria" class="modal modal-editarhistoria invisible">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia omnis enim cumque illum, eum cum quos quam
+        commodi ipsa temporibus hic labore non a iusto fugit nobis et voluptates veniam?
+        <button class="boton-crear modal-botoncerrar" onclick="cerrarModal('editarhistoria')">Cerrar</button>
+    </div>
+
+
+    <div id="historial" class="modal modal-editarhistoria invisible">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia omnis enim cumque illum, eum cum quos quam
+        commodi ipsa temporibus hic labore non a iusto fugit nobis et voluptates veniam?
+        <button class="boton-crear modal-botoncerrar" onclick="cerrarModal('historial')">Cerrar</button>
+    </div>
+
+    <script src="proyecto-userstory.js"></script>
+</body>
+
+</html>
