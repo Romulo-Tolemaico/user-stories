@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-=s@d-xogs6!0=caqm-o)7!2sm5vb%2!nd-d(51bbtgmck(r_s6"
+SECRET_KEY = "django-insecure-=$j$i2wq^wogf8h-7wcd882!53a%#8sdau=*e^&6o9%j@!b%zk"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "historias"
+    'historias_usuarios'
 ]
 
 MIDDLEWARE = [
@@ -77,7 +77,7 @@ WSGI_APPLICATION = "sistemas_dos.wsgi.application"
 DATABASES = {
     "default": {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'historias_bd',
+        'NAME': 'historias_db',
         'USER': 'postgres',
         'PASSWORD': '1234',
         'HOST': '127.0.0.1',

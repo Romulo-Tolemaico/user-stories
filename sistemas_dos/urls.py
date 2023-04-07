@@ -1,6 +1,5 @@
 """
 URL configuration for sistemas_dos project.
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
 Examples:
@@ -20,5 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include('historias.urls'))#lo asignamos como main
+    path("", include('historias_usuarios.urls'))#lo asignamos como main
 ]

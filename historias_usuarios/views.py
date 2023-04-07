@@ -9,9 +9,7 @@ def about(request):
 def verificarUsuario(request):
     usuarios = request.POST['']
     clave = request.POST['']
-    cuenta = Usuario.objects.create(
-        
-    )
+    #cuenta = Usuario.objects.create()
     return render(request,'login.html',{'usuarios':usuarios}) #usuarios [{},{},{}]
 
 def layout(request):

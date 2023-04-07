@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class HistoriasConfig(AppConfig):
+class HistoriasUsuariosConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "historias"
+    name = "historias_usuarios"
