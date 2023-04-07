@@ -1,0 +1,112 @@
+body{
+    font-family: Arial, sans-serif;
+}
+#cabe{
+
+
+    font-family: Arial, sans-serif;
+    color: #4061cd;
+	background-image: url(backround.png);
+    background-size: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-block-end: 30px;
+}
+
+.pie {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+.contenedor {
+    background-color: #cff1ff;
+	border-radius: 7px;
+	box-shadow: 30 20 10px rgba(0,0,0,0.2);
+	padding: 70px;
+	margin: auto auto;
+	max-width: 350px;
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+
+#l1{
+	margin-bottom: 10px;
+    padding-left: 50px;
+    font-weight: bold;
+	
+
+
+}
+#l2{
+    
+	margin-bottom: 10px;
+    padding-left: 30px;
+    font-weight: bold;
+	
+
+}
+input[type="text"], textarea {
+	width: 100%;
+	padding: 10px;
+	border-radius: 7px;
+	border: none;
+	margin-bottom: 25px;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+
+input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+.btn {
+	
+    background-color: #1693cd;
+	color: #fff;
+	border:0;
+	border-radius: 4px;
+	padding: 10px 40px;
+	cursor: pointer;
+  
+}
+#b_cancel{
+    text-align: center;
+    background-color: #d91734c9;
+     color: #fff;
+     border: none;
+     border-radius: 4px;
+     padding: 10px 30px;
+     cursor: pointer; 
+     margin-top: 20px;
+}
+#b_crear{
+        
+        text-align: center;
+       background-color: #0fa48bc9;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 40px;
+        cursor: pointer;      
+}
+
+.btn:hover {
+	background-color: #26afef;
+}
+#b_crear:hover {
+	background-color:#1ab2a5c9;
+}
