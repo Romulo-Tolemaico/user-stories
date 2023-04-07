@@ -2,6 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import *
 # Create your views here.
+
+def loging(request):
+    return render(request,'log.html')
+
 def about(request):
     title = ':)'
     return render(request,'about.html',{ 'title' : title})
